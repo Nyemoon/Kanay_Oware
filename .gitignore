@@ -1,0 +1,19 @@
+# Dependências (A pasta mais pesada)
+node_modules/
+
+# Build/Produção (Arquivos gerados automaticamente)
+dist/
+build/
+
+# Logs e erros
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Variáveis de ambiente (Segurança!)
+.env
+.env.local
+
+# Arquivos do Sistema Operacional (Dica de Arch User)
+.DS_Store
+Thumbs.db
