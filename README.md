@@ -78,26 +78,55 @@ Os arquivos otimizados serão gerados na pasta `dist/`.
 npm run preview
 ```
 
-## 🎯 Como Jogar Mancala
+## 🎯 Variantes do Jogo
 
-### Regras Básicas:
+Este projeto oferece duas variantes clássicas do Mancala, cada uma com suas próprias regras e estratégias:
 
+### 🏛️ Kalah - Variante Ocidental
+
+**Descrição**: A versão mais popular no ocidente, ideal para iniciantes e jogadores que desejam aprender os fundamentos do Mancala.
+
+**Características**:
+- Foco em turnos extras e capturas diretas
+- Regras simplificadas e diretas
+- Ótima para desenvolver habilidades básicas
+- Partidas geralmente mais rápidas
+
+**Regras Principais**:
 1. **Configuração Inicial**: 12 casas começam com 4 sementes cada; os Mancalas (depósitos grandes) começam vazios.
-
 2. **Objetivo**: Capturar mais sementes que o adversário.
-
 3. **Como Jogar**:
    - Clique em uma casa do seu lado para semear anti-horário
    - Pule o Mancala do adversário durante a distribuição
    - Se a última semente cair em uma casa vazia do seu lado, capture também as sementes opostas
-
+   - Se a última semente cair no seu Mancala, você ganha um turno extra
 4. **Fim do Jogo**: Quando um lado fica sem sementes, o outro jogador coleta o restante.
+
+### 🌍 Oware - Variante Africana Tradicional
+
+**Descrição**: O jogo tradicional africano com mecânicas mais complexas, exigindo profundo cálculo estratégico e antecipação de movimentos.
+
+**Características**:
+- Captura em cascata com múltiplas estratégias
+- Regras mais elaboradas e desafiadoras
+- Exige antecipação e planejamento avançado
+- Ideal para jogadores experientes buscando desafios maiores
+- Mais próximo das regras históricas do Mancala
+
+**Regras Principais**:
+1. **Configuração Inicial**: Similar ao Kalah, mas com mecânicas de captura diferentes.
+2. **Captura Especial**: Capturas ocorrem em cascata quando as sementes caem em casas específicas, permitindo movimentos encadeados.
+3. **Estratégia Profunda**: Requer pensamento tático avançado para antecipar múltiplos turnos.
+4. **Variação Tradicional**: Mantém elementos mais fiéis às origens ancestrais do jogo.
 
 ### Interface do Jogo:
 
+- **Menu Principal**: Escolha entre Kalah ou Oware ao iniciar
+- **Nomes dos Jogadores**: Personalize os nomes antes de começar
 - **Mancalas**: Depósitos grandes nos lados esquerdo (P2) e direito (P1)
 - **Casas**: 6 casas por jogador com sementes para distribuir
 - **Status**: Informações sobre o turno atual e ações realizadas
+- **Botão Voltar**: Retorne ao menu a qualquer momento para mudar de variante
 - **Controles**: Botões para ajuda, reiniciar e voltar à tela inicial
 
 ## 🛠️ Tecnologias Utilizadas
