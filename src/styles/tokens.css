@@ -1,0 +1,74 @@
+/* src/styles/tokens.css */
+
+/* Design Tokens for Mancala Game */
+:root {
+  /* Color Palette - Living Roots (Raízes Vivas) Theme */
+  --color-terracotta: #b35a38;
+  --color-terracotta-rgb: 179, 90, 56;
+  --color-ochre: #d49137;
+  --color-ochre-rgb: 212, 145, 55;
+  --color-orange: #ec631a;
+  --color-cream: #fcfaf2; /* Sophisticated cream */
+  --color-cream-darker: #f5f5dc; /* Classic cream */
+  --color-indigo: #1a2b4c;
+  --color-emerald: #2e7d32;
+  --color-ebony: #121212;
+  --color-night: #0b1220;
+  --color-dusk: #162243;
+  --color-sand: #e6c280;
+
+  /* Semantics */
+  --color-primary: var(--color-orange);
+  --color-secondary: var(--color-ochre);
+  --color-background-start: var(--color-night);
+  --color-background-end: #12203b;
+  --color-text-main: var(--color-cream);
+  --color-text-muted: rgba(252, 250, 242, 0.7);
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Josefin Sans', system-ui, sans-serif;
+
+  /* Surfaces & Glassmorphism */
+  --glass-bg: rgba(11, 18, 32, 0.92);
+  --glass-bg-hover: rgba(179, 90, 56, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-border-hover: rgba(179, 90, 56, 0.6);
+  --glass-shadow: 0 32px 90px rgba(0, 0, 0, 0.6);
+  --glass-shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 40px rgba(179, 90, 56, 0.15);
+  --inner-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 0 30px rgba(179, 90, 56, 0.25);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Global Reset & Base Styling */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  background: 
+    radial-gradient(circle at top left, rgba(var(--color-terracotta-rgb), 0.15), transparent 25%),
+    radial-gradient(circle at bottom right, rgba(26, 43, 76, 0.95), transparent 30%),
+    linear-gradient(rgba(0, 7, 18, 0.82), rgba(3, 1, 27, 0.7)),
+    url('../img/LogoMancala.jpg'),
+    linear-gradient(180deg, var(--color-background-start) 0%, var(--color-background-end) 100%);
+  background-repeat: no-repeat;
+  background-size: auto, auto, auto, cover, auto; 
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
